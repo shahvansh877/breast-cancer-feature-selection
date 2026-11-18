@@ -15,3 +15,44 @@ Four search algorithms are compared: Simulated Annealing (SA), Genetic Algorithm
 ## 4. Outputs
 
 Running the project produces a comparison of the baseline and optimized feature subsets, including accuracy, precision, recall, F1, ROC AUC, number of selected features, and optimization time. Results are saved in `results/`, and metric comparison and convergence charts are saved in `plots/`.
+
+## 5. Installation and Run
+
+### Requirements
+
+- Python 3.9 or later
+- pip
+
+### Setup
+
+Open a terminal in the project root directory, then create and activate a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+On Windows:
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+On macOS or Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+Install the required packages:
+
+```bash
+python -m pip install numpy pandas matplotlib scikit-learn
+```
+
+The WDBC dataset is included at `data/wdbc.data`, so no separate download is needed. Run the project from the project root so it can find the dataset and source modules:
+
+```bash
+python documents/main.py
+```
+
+Generated CSV results will appear in `results/`, and charts will appear in `plots/`.
